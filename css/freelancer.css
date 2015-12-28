@@ -8,6 +8,10 @@
     height: 120%;
  }
 
+ .graybox a:active {
+    background-color: gray !important;
+ }
+
 body {
     overflow-x: hidden;
 }
