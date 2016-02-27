@@ -312,54 +312,46 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  background: #ECC561;
-  text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em; }
+.toplogo {
+  height: 120%; }
 
-.logo img {
-  height: 18.75em;
-  margin-top: 6em; }
+.graybox a:active {
+  background-color: gray !important; }
 
-h1 {
-  color: rgba(0, 0, 0, 0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin: 0; }
+.main-image {
+  margin-top: 15%; }
 
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300; }
-  .doc a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear; }
-    .doc a:hover {
-      background: rgba(0, 0, 0, 0.2);
-      color: white;
-      transition: all 0.15s linear; }
+.navbar-default {
+  border-color: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  background-image: none !important; }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+.header {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0; }
-  50% {
-    -webkit-transform: scale(0);
-    opacity: 0; }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1; }
-  to {
-    -webkit-transform: scale(1); } }
+.home-image-1 {
+  margin-top: 25%; }
+
+.home-image-2 {
+  margin-top: 25%; }
+
+.home-image-3 {
+  margin-top: 20%; }
+
+.home-image-4 {
+  margin-top: 20%; }
+
+.footer-hr {
+  width: 20%; }
+
+footer {
+  color: black;
+  opacity: .7; }
+
+#2 {
+  display: none; }
