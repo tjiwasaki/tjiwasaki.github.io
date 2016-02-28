@@ -319,7 +319,7 @@ table {
   background-color: gray !important; }
 
 .main-image {
-  margin-top: 15%; }
+  margin-top: 11%; }
 
 .navbar-default {
   border-color: none !important;
@@ -334,24 +334,18 @@ table {
   -o-background-size: cover;
   background-size: cover; }
 
-.home-image-1 {
-  margin-top: 25%; }
-
-.home-image-2 {
-  margin-top: 25%; }
-
-.home-image-3 {
-  margin-top: 20%; }
-
-.home-image-4 {
-  margin-top: 20%; }
+.second-image {
+  width: 80%; }
 
 .footer-hr {
   width: 20%; }
 
+.detail {
+  margin-top: 15%; }
+
+.home-link {
+  height: 150px; }
+
 footer {
   color: black;
   opacity: .7; }
-
-#2 {
-  display: none; }
