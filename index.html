@@ -25,10 +25,15 @@
 
       <!-- Latest compiled and minified JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <!--jQuery-->
+      <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
   </head>
 
   <body class="index">
-    <!-- Navigation -->
+    <div class="container-fluid page-container">
+<!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -58,7 +63,7 @@
                         <a href="#custom">Custom</a>
                     </li>
                     <li class="page-scroll graybox">
-                        <a href="#contact">Contact</a>
+                        <a type="button" data-toggle="modal" data-target="#myModal">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -71,10 +76,11 @@
     <header class="header">
     	<div class="container-fluid">
     		<div class="row text-center">
-    			<div class="col-lg-12">
+    			<div class="col-lg-4 col-lg-offset-4">
     				<img class="main-image" src="/images/jar-placeholder.jpg">
     			</div>
     			<div class="col-lg-12">
+                    <hr class="footer-hr">
     				<img src="/images/uv_decal_black.png">
     			</div>
     		</div>
@@ -86,47 +92,93 @@
         <div class="row text-center">
             <div class="col-lg-3">
                 <img class="second-image" src="/images/jar-placeholder.jpg">
+                <hr class="footer-hr">
                 <p>This is the cork top, in all its glory.</p>
             </div>
             <div class="col-lg-3">
                 <img class="second-image" src="/images/jar-placeholder.jpg">
+                <hr class="footer-hr">
                 <p>This is the flame, check it out.</p>
             </div>
             <div class="col-lg-3">
                 <img class="second-image" src="/images/jar-placeholder.jpg">
+                <hr class="footer-hr">
                 <p>This is the pouch, hop in.</p>
             </div>
             <div class="col-lg-3">
                 <img class="second-image" src="/images/jar-placeholder.jpg">
+                <hr class="footer-hr">
                 <p>This is the journal, take notes.</p>
             </div>
         </div>
     </section>
 
     <!--third section doe-->
-    <section>
-        <div class="row text-center">
-            <div class="col-lg-4 home-link">
+    <section class="homepage-links">
+        <div class="row text-center link-housing">
+            <div class="col-lg-4 home-link1"><br><br><br>
                 <a href="">Get Yours</a>
             </div>
-            <div class="col-lg-4 home-link">
+            <div class="col-lg-4 home-link2"><br><br><br>
                 <a href="">UV News</a>
             </div>
-            <div class="col-lg-4 home-link">
-                <a href="">Get in Touch</a>
+            <div class="col-lg-4 home-link3"><br><br><br>
+                <a type="button" data-toggle="modal" data-target="#myModal">Get in Touch</a>
             </div>
         </div>
     </section>
 
    	<!--footer-->
-   	<footer class="col-lg-12 text-center">
-   		<hr class="footer-hr">
+   	<footer class="col-lg-12 text-center footer">
+   		<!--<hr class="footer-hr">-->
+        <br>
    		<p>&copy; Ultraviolet LLC - 2016</p>
    	</footer>
+</div>
+
+        
+
+    <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <!--jQuery-->
+      <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 
   </body>
 
+<!-- Contact Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Puff, puff, pass us a note.</h4>
+              </div>
+              <div class="modal-body text-center">
+                
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Modal -->
+        <div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Puff, puff, pass us a note.</h4>
+              </div>
+              <div class="modal-body text-center">
+                <form>
+                    <input type="text" placeholer="Name"><br><br>
+                    <input>
+                </form>
+              
+                <input type="submit" class="contact-submit" value="Send"></input>
+            </div>
+          </div>
+        </div>
 
 
 </html>
