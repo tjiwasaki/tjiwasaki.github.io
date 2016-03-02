@@ -456,15 +456,27 @@ input {
 .grid-p-1 {
   margin-top: 25%; }
 
+@media screen and (max-width: 680px) {
+  .grid-p-1 {
+    margin-top: 0%; } }
 .grid-p-2 {
   margin-top: 25%; }
 
+@media screen and (max-width: 680px) {
+  .grid-p-2 {
+    margin-top: 0%; } }
 .grid-p-3 {
   margin-top: 25%; }
 
+@media screen and (max-width: 680px) {
+  .grid-p-3 {
+    margin-top: 0%; } }
 .grid-p-4 {
   margin-top: 25%; }
 
+@media screen and (max-width: 680px) {
+  .grid-p-4 {
+    margin-top: 0%; } }
 .grid-2 {
   margin-top: 3em; }
 
