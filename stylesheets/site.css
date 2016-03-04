@@ -340,12 +340,35 @@ html * {
 .graybox a {
   font-size: 14px; }
 
-.graybox-1 a {
-  font-size: 14px; }
+.graybox-1 button {
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  margin-top: .9em;
+  color: gray; }
+
+.graybox-1 button:hover {
+  font-weight: 800; }
 
 @media screen and (max-width: 760px) {
-  .graybox-1 a {
-    font-size: 20px; } }
+  .graybox-1 button {
+    margin-left: .6em;
+    margin-top: .3em; } }
+.graybox-2 button {
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  margin-top: .9em;
+  color: gray;
+  margin-left: 1em; }
+
+.graybox-2 button:hover {
+  font-weight: 800; }
+
+@media screen and (max-width: 760px) {
+  .graybox-2 button {
+    margin-left: .6em;
+    margin-top: .7em; } }
 .graybox a:hover {
   font-weight: 800; }
 
