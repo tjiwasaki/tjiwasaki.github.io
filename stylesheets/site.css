@@ -340,6 +340,12 @@ html * {
 .graybox a {
   font-size: 14px; }
 
+.graybox-1 a {
+  font-size: 14px; }
+
+@media screen and (max-width: 760px) {
+  .graybox-1 a {
+    font-size: 20px; } }
 .graybox a:hover {
   font-weight: 800; }
 
