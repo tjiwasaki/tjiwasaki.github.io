@@ -329,6 +329,9 @@ html * {
 .social-badge {
   height: 25px; }
 
+.social-badge-twitter {
+  height: 27px; }
+
 .navbar {
   width: 100%;
   margin-left: 0 !important;
