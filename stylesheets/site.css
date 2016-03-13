@@ -421,6 +421,10 @@ html * {
   color: white;
   padding: 0 0 0 0; }
 
+.home-link1:hover {
+  cursor: pointer;
+  cursor: hand; }
+
 .home-link2 {
   height: 150px;
   background-color: gray;
@@ -428,7 +432,9 @@ html * {
   padding: 0 0 0 0; }
 
 .home-link2:hover {
-  background-color: black; }
+  background-color: black;
+  cursor: pointer;
+  cursor: hand; }
 
 .home-link3 {
   height: 150px;
@@ -437,7 +443,9 @@ html * {
   padding: 0 0 0 0; }
 
 .home-link3:hover {
-  background-color: black; }
+  background-color: black;
+  cursor: pointer;
+  cursor: hand; }
 
 .home-link1 a {
   color: white;
@@ -462,12 +470,16 @@ html * {
 .home-link3 a {
   color: white;
   font-weight: 400;
-  font-size: 14px; }
+  font-size: 16px;
+  cursor: pointer;
+  cursor: hand; }
 
 .home-link3 a:hover {
   font-weight: 800;
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand; }
 
 .link-housing {
   margin-left: 0 !important;
