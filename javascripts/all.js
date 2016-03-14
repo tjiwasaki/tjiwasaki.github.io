@@ -4,6 +4,6 @@ $(".animsition").animsition({
   inClass: 'zoom-in',
   outClass: 'zoom-out',
   linkElement: 'a',
-  inDuration: 1000,
+  inDuration: 800,
   outDuration: 500
 });
