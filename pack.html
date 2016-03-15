@@ -38,7 +38,53 @@
   </head>
 
   <body class="pack animsition">
-    <div class="container-fluid page-container">
+    <style>
+	.container {
+width: 960px;
+margin: 0 auto;
+padding: 20px;
+padding-bottom: 40px;
+font-family: 'Calibri', 'CalibriRegular', Verdana, Arial, Helvetica, sans-serif;
+}
+.gallery {
+}
+.gallery .previews, .gallery .full, .gallery .desc {
+float: left;
+margin-right: 10px;
+}
+.gallery .desc, .gallery .full {
+width: 400px;
+font-size: 12px;
+}
+.gallery .desc h2 {
+margin-top: 0;
+}
+.gallery .previews a {
+display: block;
+margin-bottom: 10px;
+}
+.gallery .full, .gallery .full img {
+height: 600px;
+}
+.gallery .previews a, .gallery .full {
+/*border: 4px solid #eee;*/
+}
+.gallery .previews a:hover, .gallery .previews a.selected {
+/*border: 4px solid #777;*/
+}
+.gallery .full img:hover {
+cursor: pointer;
+}
+.clearfix:after {
+content: ".";
+visibility: hidden;
+display: block;
+height: 0;
+clear: both;
+}
+
+</style>
+<div class="container-fluid page-container">
 <!-- Navigation -->
 <aside>
 <!-- Navigation -->
@@ -94,8 +140,27 @@
 	</div>
 	<div class="row text-center">
 		<div class="col-md-4 col-md-offset-2 product-feature-image">
-			<img class="second-image" src="/images/jar-placeholder.jpg">
+			<!--<img class="second-image" src="/images/jar-placeholder.jpg">-->
+			<div class="container clearfix">
+			<div class="gallery">
+
+			<div class="previews"> 
+				<a href="#" class="selected" data-full="images/top1large.jpg"><img src="images/top1small.jpg" /></a> 
+				<a href="#" data-full="images/top2large.jpg"><img src="images/top2small.jpg" /></a> 
+				<a href="#" data-full="images/top3large.jpg"><img src="images/top3small.jpg" /></a> 
+				<a href="#" data-full="images/top4large.jpg"><img src="images/top4small.jpg" /></a> 
+				<a href="#" data-full="images/top5large.jpg"><img src="images/top5small.jpg" /></a> 
+			</div>
+
+			<div class="full"> 
+				<!-- first image is viewable to start --> 
+				<img class="img-responsive" src="images/top1large.jpg" /> 
+			</div>
+
+			</div>
+			</div>
 		</div>
+
 		<div class="col-md-4">
 			<p class="product-p">For some, concealment is key. For others, statements are best made through actions and identifying with an idea. Lucky for you, the Ultraviolet tote offers both. Whether you want to tuck away your kit into a backpack on an outdoor expedition or show it off as the centerpiece of your kitchen table, the UV tote allows you to organize your tools in a sleek and secure carryall. We’ll help you keep it together.</p>
 			<!--<ul class="product-bullets">
@@ -153,7 +218,26 @@ document.getElementById('ShopifyEmbedScript') || document.write('<script type="t
       <!--jQuery-->
       <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
       <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="/javascripts/fancybox/jquery.fancybox.js"></script>
+      <script>
+		$(document).ready(function(){
 
+		$('a').click(function(){
+		var largeImage = $(this).attr('data-full');
+		$('.selected').removeClass();
+		$(this).addClass('selected');
+		$('.full img').hide();
+		$('.full img').attr('src', largeImage);
+		$('.full img').fadeIn();
+		}); 
+
+		$('.full img').on('click', function(){
+		var modalImage = $(this).attr('src');
+		$.fancybox.open(modalImage);
+		});
+
+		}); 
+	  </script>
 
 
 
