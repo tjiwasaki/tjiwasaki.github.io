@@ -338,7 +338,8 @@ html * {
   margin-right: 0 !important; }
 
 .toplogo {
-  height: 120%; }
+  height: 40px;
+  margin-top: -7px; }
 
 .graybox a {
   font-size: 14px; }
@@ -376,7 +377,7 @@ html * {
 
 .main-image {
   margin-top: 23%;
-  width: 95%; }
+  width: 100%; }
 
 .navbar-default {
   border-color: none !important;
