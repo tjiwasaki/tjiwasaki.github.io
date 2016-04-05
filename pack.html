@@ -40,7 +40,7 @@
   <body class="pack animsition">
     <style>
 	.container {
-width: 960px;
+width: 100%;
 margin: 0 auto;
 padding: 20px;
 padding-bottom: 40px;
@@ -50,7 +50,8 @@ font-family: 'Calibri', 'CalibriRegular', Verdana, Arial, Helvetica, sans-serif;
 }
 .gallery .previews, .gallery .full, .gallery .desc {
 float: left;
-margin-right: 10px;
+margin-right: 0px;
+width: 10%;
 }
 .gallery .desc, .gallery .full {
 width: 400px;
@@ -64,7 +65,8 @@ display: block;
 margin-bottom: 10px;
 }
 .gallery .full, .gallery .full img {
-height: 600px;
+width: 80%;
+margin-left: 6%;
 }
 .gallery .previews a, .gallery .full {
 /*border: 4px solid #eee;*/
@@ -139,22 +141,21 @@ clear: both;
 		<hr class="footer-hr">
 	</div>
 	<div class="row text-center">
-		<div class="col-md-4 col-md-offset-2 product-feature-image">
+		<div class="col-md-6 col-md-offset-1 product-feature-image">
 			<!--<img class="second-image" src="/images/jar-placeholder.jpg">-->
 			<div class="container clearfix">
 			<div class="gallery">
 
-			<div class="previews"> 
-				<a href="#" class="selected" data-full="images/top1large.jpg"><img src="images/top1small.jpg" /></a> 
-				<a href="#" data-full="images/top2large.jpg"><img src="images/top2small.jpg" /></a> 
-				<a href="#" data-full="images/top3large.jpg"><img src="images/top3small.jpg" /></a> 
-				<a href="#" data-full="images/top4large.jpg"><img src="images/top4small.jpg" /></a> 
-				<a href="#" data-full="images/top5large.jpg"><img src="images/top5small.jpg" /></a> 
-			</div>
+			
 
 			<div class="full"> 
 				<!-- first image is viewable to start --> 
 				<img class="img-responsive" src="images/top1large.jpg" /> 
+			</div>
+			<div class="previews"> 
+				<a href="#" class="selected" data-full="images/top1large.jpg"><img src="images/top1small.jpg" /></a> 
+				<a href="#" data-full="images/top2large.jpg"><img src="images/top2small.jpg" /></a> 
+				<a href="#" data-full="images/top3large.jpg"><img src="images/top3small.jpg" /></a> 
 			</div>
 
 			</div>
