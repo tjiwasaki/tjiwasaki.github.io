@@ -107,8 +107,6 @@
 			<div class="previews">
 				<p>
 					<a href="#" class="selected" data-full="images/journal1large.jpg"><img src="images/journal1small.jpg" /></a>
-					<a href="#" data-full="images/journal2large.jpg"><img src="images/journal2small.jpg" /></a> 
-					<a href="#" data-full="images/journal3large.jpg"><img src="images/journal3small.jpg" /></a> 
 				</p>
 			</div>
 
@@ -174,6 +172,26 @@ document.getElementById('ShopifyEmbedScript') || document.write('<script type="t
       <!--jQuery-->
       <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
       <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="/javascripts/fancybox/jquery.fancybox.js"></script>
+      <script>
+		$(document).ready(function(){
+
+		$('a').click(function(){
+		var largeImage = $(this).attr('data-full');
+		$('.selected').removeClass();
+		$(this).addClass('selected');
+		$('.full img').hide();
+		$('.full img').attr('src', largeImage);
+		$('.full img').fadeIn();
+		}); 
+
+		$('.full img').on('click', function(){
+		var modalImage = $(this).attr('src');
+		$.fancybox.open(modalImage);
+		});
+
+		}); 
+	  </script>
 
 
 
